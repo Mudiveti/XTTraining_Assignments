@@ -8,11 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 
-	@media screen and (max-width: 600px) {
-		.main{
-			display: grid;
-		}
-	}
+
 	.bbd-logo{
 		display: flex;
 		background-color: rgba(0,0,0,0.67);
@@ -52,7 +48,18 @@
 	}
 	.main{
 		padding-top: 125px;
+		display: flex;
+		padding-left: 147px;
+	}
 
+	.main_2{
+		
+		display: flex;
+		justify-content: space-between;
+	}
+	article p{
+		padding-top: 145px;
+		padding-left: 22px;
 	}
 	footer{
 		background-color: rgba(0,0,0,0.67);
@@ -95,6 +102,64 @@
 		margin: auto;
 		width: 977px;
 	}
+	.text_1{
+		padding-right: 60px;
+	}
+	.text_3{
+		padding-right: 68px;
+	}
+	.main_2{
+		padding-left: 19px;
+		padding-right: 19px;
+	}
+	.main_2 article{
+		background: beige;
+	}
+	.links_dev{
+		padding-top: 30px;
+		display: flex;
+		justify-content: space-around;
+	}
+	.links_dev ul{
+		display: grid;
+	}
+	#mySidenav a {
+		display: grid;
+		left: -80px;
+		transition: 0.3s;
+		padding: 15px;
+		width: 100px;
+		text-decoration: none;
+		font-size: 20px;
+		color: white;
+		border-radius: 0 5px 5px 0;
+	}
+
+	#mySidenav a:hover {
+		left: 10px;
+	}
+
+	#about {
+		top: 20px;
+		background-color: #4CAF50;
+	}
+#about:hover{
+	content: 'About BBD';
+}
+	#blog {
+		top: 80px;
+		background-color: #2196F3;
+	}
+
+	#projects {
+		top: 140px;
+		background-color: #f44336;
+	}
+
+	#contact {
+		top: 200px;
+		background-color: #555
+	}
 	footer img{
 		width: 145px;
 		height: 65px;
@@ -132,71 +197,125 @@
 	}
 	.fa:hover {
 		opacity: 0.7;
-		te
+		
+	}
+
+	@media screen and (max-width:500px) {
+		.main{
+			
+			display: grid;
+			
+		}
+
 	}
 	
 </style>
 </head>
+
 <body>
-	<body>
-		<div class="container">
-			<header>
-				<div class="bbd-logo">
-					<img src="../images/bbd-logo.png"/>
+	<div class="container">
+		<header>
+			<div class="bbd-logo">
+				<img src="../images/bbd-logo.png" alt="bbd-logo" />
 
-					<nav class="header-nav" >
-						<UL>
-							<li><a href="#">What we do</a></li>
-							<li><a href="#">careers</a></li>
-							<li><a href="#">News</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact</a></li>
-						</UL>
-					</nav>
-				</div>
-			</header>
-			
-			<div class="software-img"><img src="../images/software-dev.jpeg"></div>
-
-			<div class="main container_12">
-				<div class="grid_4">
-					<p><img src="../images/java-nedbank.jpeg"></p>
-
-					<h2><a href="#">Java development framework project</a></h2>
-					<p>Congratulations to Amen, David, Kenneth, Lindani, Lodewyk, Thendo and Tobias: the BBD team who have been nominated for a Nedbank Ongoing Award for their highly successful Centre of Excellence (CoE)</p>
-				</div>
-				<div class="grid_4">
-					<p><img src="../images/google.jpeg"></p>
-					<h2><a href="#">Google I/O: as told by a developer</a></h2>
-					<p>Most of us have seen the fascinating yet frightening Google I/O videos of Google Assistant phoning a restaurant to make a reservation. Mike Geyser shares his mind-blowing experience of Google's</p>
-				</div>
-				<div class="grid_4">
-					<p><img src="../images/Government2.jpeg"></p>
-					<h2><a href="#">Connected government: a convenience or necessity?</a></h2>
-					<p>As governments are working towards delivering quality services in increasingly complex environments, so IoT tech could provide new value for South African citizens, enhance capabilities, streamline processes and better engage</p>
-				</div>
+				<nav class="header-nav" >
+					<UL>
+						<li><a href="#">What we do</a></li>
+						<li><a href="#">careers</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</UL>
+				</nav>
 			</div>
+		</header>
 
-			<!-- <div class="container_12">
 
+
+
+		<div class="software-img"><img src="../images/software-dev.jpeg" alt="software-dev"></div>
+
+		<div class="main">
+
+			<div class="">
+				<p><img src="../images/java-nedbank.jpeg" alt="java-nedbank"></p>
+
+				<h2><a href="#">Java development framework project</a></h2>
+				<p class="text_1">Congratulations to Amen, David, Kenneth, Lindani, Lodewyk, Thendo and Tobias: the BBD team who have been nominated for a Nedbank Ongoing Award for their highly successful Centre of Excellence (CoE)</p>
+			</div>
+			<div class="">
+				<p><img src="../images/google.jpeg" alt="google"></p>
+				<h2><a href="#">Google I/O: as told by a developer</a></h2>
+				<p>Most of us have seen the fascinating yet frightening Google I/O videos of Google Assistant phoning a restaurant to make a reservation. Mike Geyser shares his mind-blowing experience of Google's</p>
+			</div>
+			<div class="">
+				<p><img src="../images/Government2.jpeg" alt="Government"></p>
+				<h2><a href="#">Connected government?</a></h2>
+				<p class="text_3">As governments are working towards delivering quality services in increasingly complex environments, so IoT tech could provide new value for South African citizens, enhance capabilities, streamline processes and better engage</p>
+			</div>
+			
+		</div>
+
+
+		<div class="main_2">
+			<article>
 				<h1 class="grid_12">
 					<img src="../images/expertiselogo.jpeg"/>
 					
-						Our expertise
+					Our expertise
 					
 					
 				</h1>
 				<p>
 					Our 700 impressively talented experts specialise in crafting unique solutions for your business environment. Our extensive knowledge and passion for groundbreaking technology allow us to provide insightful tech and business consulting, agile strategies and integration with your legacy systems. 
 				</p>
-			</div>
+			</article>
 
-		-->
+		</div>
+
+		<section>
+			<div class="links_dev">
+				<div class="links_dev1">
+					<ul ><li><a href="" class="">Services</a></li>
+						<li><a href="" class="">Industries</a></li>
+						<li><a href="" class="">Partners</a></li>
+						<li><a href="" class="">Insights &amp; News</a></li>
+						<li><a href=" " class="">Careers</a></li>
+						<li><a href=" " class="">Our Company</a></li>
+					</ul>
+				</div>
+				<div class="links_dev2">
+					<ul >
+						<li><a href=" " class="">Investor relations</a></li>
+						<li><a href="#" class="footer__nav--locations">Locations</a></li>
+						<li><a href="" class="">Newsroom</a></li>
+						<li><a href="" class="">Find us</a></li>
+						<li><a href="" class="">Contact Capgemini India</a></li>
+					</ul>
+				</div>
+				<div class="links_dev3">
+					<ul >
+						<li><a href="">Terms of Use</a></li>
+						<li><a href="">Privacy Policy</a></li>
+
+						<li><a href="">Social Media Guidelines</a></li>
+						<li><a href="">Legal Information / Mentions Légales</a></li>
+					</ul>
+				</div>	
+			</div>				
+		</section>
+		<div id="mySidenav" class="sidenav">
+			<a href="#" id="about">About</a>
+			<a href="#" id="blog">Blog</a>
+			<a href="#" id="projects">Projects</a>
+			<a href="#" id="contact">Contact</a>
+		</div>
+		
 		<div class="footer-dev">
 			<footer class="">
 				<div class="footer-div1">
 
-					<img src="../images/bbd-logo.png">
+					<img src="../images/bbd-logo.png" alt="bbd-logo">
 
 					<ul>
 						<li><a href="#" class="fa fa-facebook"></a></li>

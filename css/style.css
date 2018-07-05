@@ -1,13 +1,9 @@
-/* Layout styles -----------------------------------*/
 @media (min-width: 620px) {
   main {
     column-count: 2;
     column-gap: 20px;
   }
   
-  section {
-    break-inside: avoid;
-  }
 }
 
 @media (min-width: 960px) {
@@ -16,15 +12,6 @@
   }
 }
 
-/* styles */
-
-/*:root {
-  --blue: #34495e;
-  --green: #e74c3c;
-  --yellow: #C9C243;
-  --orange: #FFA644;
-  --red: #3498db;
-}*/
 
 body {
   background-color: #34495e;
@@ -100,6 +87,18 @@ section {
   background-color: white;
   margin-bottom: 20px;
   overflow: hidden;
+  height: 241px;
+}
+section p{
+      height: 120px;
+}
+.learn_more{
+   border-top: 3px solid  #3498db;
+  border-radius: 3px;
+  background-color: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+      height: 64px;
 }
 
 .section-img {
@@ -138,6 +137,7 @@ section {
     background-size: cover;
     margin-left: 102px;
     margin-right: 105px;
+    height: 453px;
 }
 .java_more{
   margin-bottom: 0px;

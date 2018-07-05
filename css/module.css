@@ -1,0 +1,122 @@
+.title {
+  font-size: 2.6em;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px
+}
+.figure-img {
+  display: block;
+  width: 100%;
+}
+
+
+.info-link {
+  text-decoration: none;
+  color: red;
+  padding: 10px;
+  display: block;
+  margin-top: 26px;
+}
+
+
+.options-link {
+  text-decoration: none;
+  font-size: 1.1em;
+/*  color: var(--red);*/
+ /* font-weight:bold;*/
+}
+.options a:hover{
+   /*font-size: 1em;*/
+   color: blue;
+   font-weight: bold; 
+   font-family: sans-serif;
+}
+
+.learn_more{
+ border-top: 3px solid  #3498db;
+ border-radius: 3px;
+ background-color: white;
+ margin-bottom: 20px;
+ overflow: hidden;
+ height: 64px;
+}
+
+.multiline-ellipsis {
+  display: block;
+  display: -webkit-box;
+  max-width: 400px;
+  height: 109.2px;
+  margin: 0 auto;
+
+  line-height: 1.4;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section-img {
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.bigtitle {
+  padding: 0;
+}
+
+.bigtitle-title {
+  color: white;
+  background-color:  #3498db;
+  margin-bottom: 10px;
+}
+
+.bigbottom-link {
+  background-color: #e74c3c;
+  color: white;
+}
+.java {
+  display: flex;
+}
+.explore{
+  text-decoration: none;
+  color: red;
+  height: 67px;
+  display: block;
+}
+
+.profile {
+  width: 80%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+  #mySidenav a:hover {
+      left: 10px;
+    }
+
+    #about {
+      top: 20px;
+      background-color: #4CAF50;
+    }
+    #about:hover{
+      content: 'About BBD';
+    }
+    #blog {
+      top: 80px;
+      background-color: #2196F3;
+    }
+
+    #projects {
+      top: 140px;
+      background-color: #f44336;
+    }
+
+    #contact {
+      top: 200px;
+      background-color: #555
+    }
+    .footer_dev{
+      width: 1291px;
+      display: flex;
+      justify-content: space-around;
+    }

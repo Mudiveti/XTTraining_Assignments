@@ -1,0 +1,86 @@
+body {
+	background-color: #34495e;
+	font-family: 'Ubuntu', sans-serif;
+	color: #34495e;
+}
+header,footer {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 20px 0;
+}
+main {    
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+section p{
+	height: 120px;
+}
+
+h2 {
+	font-size: 1.4em;
+	padding: 10px;
+	background-color:  #3498db;
+	margin-top: 0px;
+	color: white;
+}
+
+p {
+	margin-bottom: 1em;
+	padding: 0 10px;
+}
+/*@media (min-width: 620px) {
+	.options-link {
+		font-size: 1.4em;
+	}
+	
+
+}*/
+/*@media (max-width: 620px) {
+	.back_img{
+		margin-left: 22px;
+	}
+	
+	
+}*/
+
+@media (min-width: 620px) {
+	main {
+		column-count: 2;
+		column-gap: 20px;
+	}
+/*	#mySidenav{
+		display: flex;
+		column-count: 2;
+	}*/
+
+}
+
+@media (min-width: 960px) {
+	main {
+		column-count: 3;
+	}
+}
+
+@media (max-width: 420px) {
+	main {
+		column-count: 1;
+		column-gap: 20px;
+	}
+	
+	header .options {
+		display: flex;
+		flex-direction: column;
+	}
+	#mySidenav{
+		display: flex;
+		flex-direction: column;
+	}
+	.maint_2{
+		
+		   padding-left: 10px; 
+          padding-right: 10px; 
+	}
+
+}

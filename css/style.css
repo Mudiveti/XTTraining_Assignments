@@ -1,7 +1,199 @@
-a{
-	color: brown;
-	text-decoration: none;
+/* Layout styles -----------------------------------*/
+@media (min-width: 620px) {
+  main {
+    column-count: 2;
+    column-gap: 20px;
+  }
+  
+  section {
+    break-inside: avoid;
+  }
 }
-h1{
-	color: rgb(63, 191, 63);
+
+@media (min-width: 960px) {
+  main {
+     column-count: 3;
+  }
+}
+
+/* styles */
+
+/*:root {
+  --blue: #34495e;
+  --green: #e74c3c;
+  --yellow: #C9C243;
+  --orange: #FFA644;
+  --red: #3498db;
+}*/
+
+body {
+  background-color: #34495e;
+  font-family: 'Ubuntu', sans-serif;
+  color: #34495e;
+}
+
+main {    
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header,footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+}
+
+
+.title {
+  font-size: 2.6em;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px
+}
+
+.figure-img {
+  display: block;
+  width: 100%;
+  object: fit;
+}
+
+h2 {
+  font-size: 1.4em;
+  padding: 10px;
+  background-color:  #3498db;
+  margin-top: 0px;
+  color: white;
+}
+
+p {
+  margin-bottom: 1em;
+  padding: 0 10px;
+}
+
+.info-link {
+  text-decoration: none;
+  color: red;
+  padding: 10px;
+  display: block;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 3px solid  #3498db;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.options-link {
+  text-decoration: none;
+  font-size: 0.9em;
+  color: var(--red);
+}
+
+section {
+  border-top: 3px solid  #3498db;
+  border-radius: 3px;
+  background-color: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.section-img {
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.bigtitle {
+  padding: 0;
+}
+
+.bigtitle-title {
+  color: white;
+  background-color:  #3498db;
+  margin-bottom: 10px;
+}
+
+.bigbottom-link {
+  background-color: #e74c3c;
+  color: white;
+}
+.java {
+  display: flex;
+}
+
+.profile {
+  width: 80%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.back_img {
+    background-image: url('../images/forestbridge.jpeg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-left: 102px;
+    margin-right: 105px;
+}
+.java_more{
+  margin-bottom: 0px;
+
+}
+/*.learn_more{
+  width: 86%;
+    margin-left: 100px;
+}*/
+#mySidenav a {
+    display: grid;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+        
+          
+  }
+
+  #mySidenav a:hover {
+    left: 10px;
+  }
+
+  #about {
+    top: 20px;
+    background-color: #4CAF50;
+  }
+#about:hover{
+  content: 'About BBD';
+}
+  #blog {
+    top: 80px;
+    background-color: #2196F3;
+  }
+
+  #projects {
+    top: 140px;
+    background-color: #f44336;
+  }
+
+  #contact {
+    top: 200px;
+    background-color: #555
+  }
+.footer_dev{
+      width: 1291px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 620px) {
+  .options-link {
+    font-size: 1.4em;
+  }
 }
